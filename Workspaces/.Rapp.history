@@ -1,0 +1,44 @@
+load("/Users/Gerko/Project/Manuscripten/Finite Populations/Workspaces/Multivariate_sim90.RData")
+rubin2
+finite2
+cbind(finite2,rubin2)
+load("/Users/Gerko/Project/Manuscripten/Finite Populations/Workspaces/Multivariate_sim99.RData")
+finite2
+rubin2
+ls()
+load("/Users/Gerko/Project/Manuscripten/Finite Populations/Workspaces/Simulation_Multivariate_m=5.RData")
+rm(SIM)#
+save.image("Workspaces/Simulation_Multivariate_m=5.RData")
+rm(SIM)#
+save.image("Simulation_Multivariate_m=5.RData")
+load("/Users/Gerko/Project/Manuscripten/Finite Populations/Workspaces/Multivariate_sim10.RData")
+SIM[[1]]
+is.mids(SIM[[1]])
+require(mice)
+is.mids(SIM[[1]])
+ls()
+pooled[[1]]
+Reduce("+",pooled[[1]])
+Reduce("+",pooled[[2]])
+names(pooled)
+Reduce("+",pooled[[3]])
+Reduce("+",pooled[[3]])/length(pooled[[3]])
+load("/Users/Gerko/Project/Manuscripten/Finite Populations/Workspaces/Multivariate_sim50.RData")
+out50
+load("/Users/Gerko/Project/Manuscripten/Finite Populations/Workspaces/Multivariate_sim10.RData")
+out10
+load("/Users/Gerko/Project/Manuscripten/Finite Populations/Workspaces/Multivariate_sim90.RData")
+load("/Users/Gerko/Project/Manuscripten/Finite Populations/Workspaces/Multivariate_sim95.RData")
+cor(SIM[[3]]$data)
+cor(SIM[[3]]$data, use="pairwise.complete.obs")
+SIM[[3]]$log
+mis <- SIM[[3]]$data#
+data<-population
+cor(population)
+cor(mis)
+cor(mis, use="pairwise.complete.obs")
+!is.na(cor(mis, use = "pairwise.complete.obs")[2,3]) & cor(mis, use = "pairwise.complete.obs")[2,3] > .99
+!is.na(cor(mis, use = "pairwise.complete.obs")[2,3])
+cor(mis, use = "pairwise.complete.obs")[2,3] > .99
+abs(cor(mis, use = "pairwise.complete.obs")[2,3]) > .99
+!is.na(cor(mis, use = "pairwise.complete.obs")[2,3]) & abs(cor(mis, use = "pairwise.complete.obs")[2,3]) > .99
