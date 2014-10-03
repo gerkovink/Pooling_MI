@@ -4,7 +4,7 @@ DATA ARCHIVE
 Pooling multiple imputations when the sample happens to be the population
 
 ---
-This repository contains all necessary files to replicate the simulation study for the manuscript "Pooling multiple imputations when the sample happens to be the population" by Gerko Vink and Stef van Buuren. Software requirements are R (http://www.r-project.org}) and R-package mice (http://cran.r-project.org/web/packages/mice/index.html).
+This repository contains all necessary files to replicate the simulation study for the manuscript "Pooling multiple imputations when the sample happens to be the population" by Gerko Vink and Stef van Buuren. Software requirements are R (http://www.r-project.org}) and R-package mice (http://cran.r-project.org/web/packages/mice/index.html). This manuscript can be found at http://arxiv.org/pdf/1409.8542v1.pdf. 
 
 ---
 
